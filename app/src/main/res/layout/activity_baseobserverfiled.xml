@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <import type="com.cmit.datrabindingdemo.bean.ObservableGoods"/>
+        <import type="com.cmit.datrabindingdemo.ui.BaseObserverFiledActivity.ObservableGooodsHandler"/>
+
+        <variable name="goods" type="ObservableGoods"/>
+        <variable name="observableGoodsHandler" type="ObservableGooodsHandler"/>
+
+    </data>
+
+    <LinearLayout
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{goods.name}" />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{String.valueOf(goods.price)}" />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{goods.details}" />
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{()->observableGoodsHandler.changeGoodsName()}"
+                android:text="改变属性 name 和 price"
+                android:textAllCaps="false" />
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{()->observableGoodsHandler.changeGoodsDetails()}"
+                android:text="改变属性 details 和 price"
+                android:textAllCaps="false" />
+
+
+    </LinearLayout>
+</layout>

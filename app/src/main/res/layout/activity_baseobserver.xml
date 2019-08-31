@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+
+        <import type="com.cmit.datrabindingdemo.bean.Goods"/>
+        <import type="com.cmit.datrabindingdemo.ui.BaseObserverActivity.GoodsHandler"/>
+
+        <variable name="goods" type="Goods"/>
+        <variable name="goodsHandler" type="GoodsHandler"/>
+
+    </data>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/tv_userName"
+                android:text="@{goods.name}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/tv_detail"
+                android:text="@{goods.details}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/tv_price"
+                android:text="@{String.valueOf(goods.price)}"
+                android:layout_width="match_parent"
+                  android:layout_height="wrap_content"/>
+
+        <Button
+                android:id="@+id/btn_name_price"
+                android:text="name_price"
+                android:onClick="@{()->goodsHandler.changeName()}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <Button
+                android:id="@+id/btn_detail_price"
+                android:text="detail_price"
+                android:onClick="@{()->goodsHandler.changGoodsDetail()}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</layout>
