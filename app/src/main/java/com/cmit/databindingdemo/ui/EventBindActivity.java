@@ -1,0 +1,41 @@
+package com.cmit.databindingdemo.ui;
+
+import android.text.Editable;
+import android.widget.Toast;
+import androidx.databinding.DataBindingUtil;
+
+import com.cmit.databindingdemo.R;
+import com.cmit.databindingdemo.base.BaseActivityKt;
+import com.cmit.databindingdemo.bean.User;
+import com.cmit.databindingdemo.databinding.ActivityMainEBinding;
+
+
+public class EMainActivity extends BaseActivityKt {
+
+    ActivityMainEBinding bindBinding;
+    User user;
+    @Override
+    protected void initBinding() {
+        bindBinding = DataBindingUtil.setContentView(this, R.layout.activity_main_e);
+        user = new User("tan", "123456");
+        bindBinding.setUser(user);
+    }
+
+    public class UserPresenter{
+        public void onUserNameClick(User user){
+            Toast.makeText(EMainActivity.this, "用户名称：" + user.getName(), Toast.LENGTH_SHORT).show();
+        }
+
+        public void afterTextChanged(Editable s){
+            user.setName(s.toString());
+            bindBinding.setUser(user);
+        }
+
+        public void afterUserPasswordChanged(Editable s){
+            user.setPassword(s.toString());
+            bindBinding.setUser(user);
+        }
+    }
+
+
+}

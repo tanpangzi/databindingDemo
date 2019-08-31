@@ -4,10 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.cmit.datrabindingdemo.ui.BaseCollectActivity
-import com.cmit.datrabindingdemo.ui.BaseObserverActivity
-import com.cmit.datrabindingdemo.ui.BaseObserverFiledActivity
-import com.cmit.datrabindingdemo.ui.SingleDoubleDataActivity
+import com.cmit.datrabindingdemo.ui.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -20,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         btn_base_observable.setOnClickListener { jumpActivity(BaseObserverActivity::class.java) }
         btn_observable_filed.setOnClickListener { jumpActivity(BaseObserverFiledActivity::class.java) }
         btn_observable_collect.setOnClickListener { jumpActivity(BaseCollectActivity::class.java) }
-        btn_event_binding.setOnClickListener { jumpActivity(BaseCollectActivity::class.java) }
+        btn_event_binding.setOnClickListener { jumpActivity(EventBindActivity::class.java) }
     }
 
     /** 跳转activity */
