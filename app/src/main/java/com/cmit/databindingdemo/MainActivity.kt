@@ -1,10 +1,9 @@
-package com.cmit.datrabindingdemo
+package com.cmit.databindingdemo
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import com.cmit.datrabindingdemo.ui.*
+import com.cmit.databindingdemo.ui.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

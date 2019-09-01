@@ -1,4 +1,4 @@
-package com.cmit.datrabindingdemo.bean
+package com.cmit.databindingdemo.bean
 
 import androidx.databinding.ObservableField
 import androidx.databinding.ObservableFloat

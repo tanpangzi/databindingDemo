@@ -1,8 +1,9 @@
-package com.cmit.datrabindingdemo.bean;
+package com.cmit.databindingdemo.bean;
 
 import androidx.databinding.BaseObservable;
 import androidx.databinding.Bindable;
-import com.cmit.datrabindingdemo.BR;
+
+import com.cmit.databindingdemo.BR;
 
 public class Goods extends BaseObservable {
     //如果是 public 修饰符，则可以直接在成员变量上方加上 @Bindable 注解
@@ -25,7 +26,7 @@ public class Goods extends BaseObservable {
 
     public void setName(String name) {
         this.name = name;
-        notifyPropertyChanged(BR.name);
+        notifyPropertyChanged(com.cmit.databindingdemo.BR.name);
     }
 
     @Bindable

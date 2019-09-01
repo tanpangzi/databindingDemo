@@ -1,9 +1,7 @@
-package com.cmit.datrabindingdemo.base
+package com.cmit.databindingdemo.base
 
 import android.app.Activity
 import android.os.Bundle
-import androidx.databinding.DataBindingUtil
-import androidx.databinding.ViewDataBinding
 
 abstract class BaseActivityKt : Activity() {
 

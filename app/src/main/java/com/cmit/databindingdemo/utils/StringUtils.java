@@ -1,4 +1,4 @@
-package com.cmit.datrabindingdemo.utils;
+package com.cmit.databindingdemo.utils;
 
 /**
  * 作者：leavesC

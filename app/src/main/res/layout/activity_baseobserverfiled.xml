@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
     <data>
-        <import type="com.cmit.datrabindingdemo.bean.ObservableGoods"/>
-        <import type="com.cmit.datrabindingdemo.ui.BaseObserverFiledActivity.ObservableGooodsHandler"/>
+        <import type="com.cmit.databindingdemo.bean.ObservableGoods"/>
+        <import type="com.cmit.databindingdemo.ui.BaseObserverFiledActivity.ObservableGooodsHandler"/>
 
-        <variable name="goods" type="ObservableGoods"/>
+        <variable name="goods" type="com.cmit.databindingdemo.bean.ObservableGoods"/>
         <variable name="observableGoodsHandler" type="ObservableGooodsHandler"/>
 
     </data>

@@ -1,12 +1,13 @@
-package com.cmit.datrabindingdemo.ui;
+package com.cmit.databindingdemo.ui;
 
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ObservableField;
 import androidx.databinding.ObservableFloat;
-import com.cmit.datrabindingdemo.R;
-import com.cmit.datrabindingdemo.base.BaseActivityKt;
-import com.cmit.datrabindingdemo.bean.ObservableGoods;
-import com.cmit.datrabindingdemo.databinding.ActivityBaseobserverfiledBinding;
+
+import com.cmit.databindingdemo.R;
+import com.cmit.databindingdemo.base.BaseActivityKt;
+import com.cmit.databindingdemo.bean.ObservableGoods;
+import com.cmit.databindingdemo.databinding.ActivityBaseobserverfiledBinding;
 
 import java.util.Random;
 

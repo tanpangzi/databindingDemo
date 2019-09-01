@@ -11,7 +11,7 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:context=".MainActivity">
+            tools:context="com.cmit.databindingdemo.MainActivity">
 
         <Button
                 android:id="@+id/btn_single_double_databinding"

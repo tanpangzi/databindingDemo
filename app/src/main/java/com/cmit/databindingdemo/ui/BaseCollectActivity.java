@@ -1,10 +1,11 @@
-package com.cmit.datrabindingdemo.ui;
+package com.cmit.databindingdemo.ui;
 
 import android.view.View;
 import androidx.databinding.*;
-import com.cmit.datrabindingdemo.R;
-import com.cmit.datrabindingdemo.base.BaseActivityKt;
-import com.cmit.datrabindingdemo.databinding.ActivityBaseCollectBinding;
+
+import com.cmit.databindingdemo.R;
+import com.cmit.databindingdemo.base.BaseActivityKt;
+import com.cmit.databindingdemo.databinding.ActivityBaseCollectBinding;
 
 import java.util.Random;
 

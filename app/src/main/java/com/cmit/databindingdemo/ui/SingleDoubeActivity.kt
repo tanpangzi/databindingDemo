@@ -1,9 +1,9 @@
-package com.cmit.datrabindingdemo.ui
+package com.cmit.databindingdemo.ui
 
 import androidx.databinding.DataBindingUtil
-import com.cmit.datrabindingdemo.R
-import com.cmit.datrabindingdemo.base.BaseActivityKt
-import com.cmit.datrabindingdemo.databinding.ActivitySingleDoubleBinding
+import com.cmit.databindingdemo.R
+import com.cmit.databindingdemo.base.BaseActivityKt
+import com.cmit.databindingdemo.databinding.ActivitySingleDoubleBinding
 
 
 class SingleDoubeActivity : BaseActivityKt() {

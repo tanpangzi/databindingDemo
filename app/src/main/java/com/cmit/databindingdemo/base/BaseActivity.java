@@ -1,4 +1,4 @@
-package com.cmit.datrabindingdemo.base;
+package com.cmit.databindingdemo.base;
 
 import android.app.Activity;
 import android.os.Bundle;

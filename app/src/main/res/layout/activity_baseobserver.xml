@@ -2,8 +2,8 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
     <data>
 
-        <import type="com.cmit.datrabindingdemo.bean.Goods"/>
-        <import type="com.cmit.datrabindingdemo.ui.BaseObserverActivity.GoodsHandler"/>
+        <import type="com.cmit.databindingdemo.bean.Goods"/>
+        <import type="com.cmit.databindingdemo.ui.BaseObserverActivity.GoodsHandler"/>
 
         <variable name="goods" type="Goods"/>
         <variable name="goodsHandler" type="GoodsHandler"/>
