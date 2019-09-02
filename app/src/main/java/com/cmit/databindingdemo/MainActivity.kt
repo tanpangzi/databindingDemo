@@ -17,6 +17,8 @@ class MainActivity : AppCompatActivity() {
         btn_observable_filed.setOnClickListener { jumpActivity(BaseObserverFiledActivity::class.java) }
         btn_observable_collect.setOnClickListener { jumpActivity(BaseCollectActivity::class.java) }
         btn_event_binding.setOnClickListener { jumpActivity(EventBindActivity::class.java) }
+        btn_recyclerView.setOnClickListener { jumpActivity(RecyclerViewBindActivity::class.java) }
+        btn_observable_list.setOnClickListener { jumpActivity(ObservableArrayListActivity::class.java) }
     }
 
     /** 跳转activity */

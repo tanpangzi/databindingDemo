@@ -21,6 +21,8 @@
         <activity android:name="com.cmit.databindingdemo.ui.BaseObserverFiledActivity"/>
         <activity android:name="com.cmit.databindingdemo.ui.BaseCollectActivity"/>
         <activity android:name=".ui.EventBindActivity"/>
+        <activity android:name=".ui.RecyclerViewBindActivity"/>
+        <activity android:name=".ui.ObservableArrayListActivity"/>
     </application>
 
 </manifest>
